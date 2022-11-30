@@ -1,0 +1,33 @@
+{% extends 'Quiz/dependencies.html' %}
+{% load static %}
+{% block content %}
+
+<style>
+    .bg-image {
+	position: absolute;
+	top: 50;
+	left: 0;
+	width: 100%;
+	height: 40%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+.new{
+    position: relative;
+    display: block;
+    top:300px;
+    text-align: center;
+    line-height: 2;
+}
+}
+
+</style>
+
+    <div class="bg-image" style="background-image:url({% static 'SKILL-LYNC.jpg' %})">
+    </div>
+    <div class="new">
+        <h1> Welcome to Skill-Lync courses </h1>
+        <div> Hello Students, please use this site to take quizzes and to try hands on python code using our embedded interpreter. You can either register with a username/password or take test as a guest. For questions contact -  sudharsana.v@skill-lync.com</div>
+    </div>
+{% endblock %}
